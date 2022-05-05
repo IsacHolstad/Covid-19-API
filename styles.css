@@ -1,7 +1,13 @@
-.covid-container{
-    width: 350px;
+body{
+    background-color: rgb(255, 255, 255);
+}
+/*.covid-container{
+    width: 550px;
+    margin-top: 50px;
     height: 300px;
     background-image: linear-gradient(rebeccapurple, rgb(115, 19, 212));
     border-radius: 50px;
-    box-shadow: 0 0 50px;
+    margin-left: 50px;
+    color: white;
 }
+*/
