@@ -1,2 +1,6 @@
 console.log(document.location);
-console.log(time)
+
+const myAPI = 'https://covid.mathdro.id/api'
+console.log(myAPI);
+
+const container = document.querySelector(".covid-container");
