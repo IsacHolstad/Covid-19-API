@@ -14,9 +14,9 @@ async function results(){
         const responseJSON = await response.json();
         console.log(responseJSON);
         const covidData = responseJSON.data;
-        console.log(covidData);
-        for (let i = 0; i < covidData.length; i++) {
-            console.log(covidData[i].confirmed);
+        console.log(responseJSON);
+        for (let i = 0; i < responseJSON.length; i++) {
+            console.log(responseJSON[i]);
 
            // container.innerHTML += `<li>${responseJSON[i]}</li>`
         };
