@@ -1,0 +1,7 @@
+.covid-container{
+    width: 350px;
+    height: 300px;
+    background-image: linear-gradient(rebeccapurple, rgb(115, 19, 212));
+    border-radius: 50px;
+    box-shadow: 0 0 50px;
+}
