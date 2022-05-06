@@ -15,10 +15,12 @@ body{
     color: white;
 }
 */
-#navigation{
+.navigation{
     width: 100%;
+    position: absolute;
+    top: 0px;
     height: 40px;
-    background-image: linear-gradient(rebeccapurple, rgb(115, 19, 212));
+   background-color: black;
 }
 li{
     margin-top: 50px;
@@ -32,6 +34,14 @@ a {
     text-decoration: none;
     padding: 15px;
 }
-a:hover{
-    text-decoration: underline;
-}
+body {
+ 
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: rgb(213, 213, 213);
+  }

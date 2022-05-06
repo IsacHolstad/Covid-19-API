@@ -24,4 +24,9 @@ async function cryptoNames() {
 }
 cryptoNames();
 
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
+
 
