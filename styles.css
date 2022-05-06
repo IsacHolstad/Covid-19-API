@@ -34,6 +34,9 @@ a {
     text-decoration: none;
     padding: 15px;
 }
+a:hover{
+    text-decoration: underline;
+}
 body {
  
     background-color: white;
