@@ -20,7 +20,7 @@ body{
     position: absolute;
     top: 0px;
     height: 40px;
-   background-color: black;
+   background-color: green;
 }
 li{
     margin-top: 50px;
@@ -30,7 +30,7 @@ li{
     text-align: right;
 }
 a {
-    color: white;
+    color: gray;
     text-decoration: none;
     padding: 15px;
 }
@@ -54,4 +54,5 @@ body {
   .dark-mode {
     background-color: black;
     color: rgb(213, 213, 213);
+    
   }
