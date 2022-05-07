@@ -40,6 +40,11 @@ a:hover{
 .darkmode-btn{
     position: absolute;
     top: 5px;
+    border-radius: 20px;
+    height: 20px;
+    width: 75px;
+    background-color: transparent;
+    border: 1px solid black;
 
     right: 5px;
     
