@@ -64,6 +64,14 @@ body {
     color: rgb(213, 213, 213);
     
   }
+  .footer ul{
+      text-align: center;
+     
+      
+  }
+  .footer ul:hover{
+      text-decoration: underline;
+  }
  
   .footer{
       position: absolute;
