@@ -37,6 +37,13 @@ a {
 a:hover{
     text-decoration: underline;
 }
+.darkmode-btn{
+    position: absolute;
+    top: 5px;
+
+    right: 5px;
+    
+}
 body {
  
     background-color: white;
