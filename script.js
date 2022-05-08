@@ -11,10 +11,10 @@ async function cryptoNames() {
         console.log(response)
         const responseJSON = await response.json(); // convert the response to json data
         const cryptoData = responseJSON.data;
-        console.log( )
-        for (let i = 0; i < cryptoData.length; i++) {
+        console.log(responseJSON)
+        for (let i = 0; i < responseJSON.length; i++) {
            
-            resultContainer.innerHTML += `<li>${cryptoData[i].Albania.All}</li>`;
+            resultContainer.innerHTML += `<li>${responseJSON[i].confirmed}</li>`;
         }
     }
     catch(error) {
