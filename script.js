@@ -1,4 +1,4 @@
-const myAPI = "https://covid-api.mmediagroup.fr/v1/cases"
+const myAPI = "https://coronavirus.m.pipedream.net/"
 
 console.log(myAPI)
 
@@ -12,9 +12,9 @@ async function cryptoNames() {
         const responseJSON = await response.json(); // convert the response to json data
         const cryptoData = responseJSON.data;
         console.log(responseJSON)
-        for (let i = 0; i < responseJSON.length; i++) {
+        for (let i = 0; i < cryptoData.length; i++) {
            
-            resultContainer.innerHTML += `<li>${responseJSON[i].confirmed}</li>`;
+            resultContainer.innerHTML += `<li>${cryptoData[i].summaryStats.global}</li>`;
         }
     }
     catch(error) {
