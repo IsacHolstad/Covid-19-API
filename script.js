@@ -14,7 +14,7 @@ async function cryptoNames() {
         console.log(responseJSON);
         for (let i = 0; i < cryptoData.length; i++) {
            
-            resultContainer.innerHTML += `<li>${cryptoData[i].summaryStats.global}</li>`;
+            resultContainer.innerHTML += `<li>${cryptoData[i].global.confirmed}</li>`;
         }
     }
     catch(error) {
