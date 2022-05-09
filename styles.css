@@ -76,7 +76,9 @@ body {
   .footer{
       position: absolute;
       top: 2500px;
-      border-top: 1px solid black;
+      color: lightcyan;
+      background-color: aqua;
       height: 100px;
+      color: white;
       width: 100%;
   }
