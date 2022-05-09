@@ -1,28 +1,56 @@
 const myAPI = "https://covid19.mathdro.id/api"
+const proxy = "https://noroffcors.herokuapp.com/";
+const corsFixUrl = proxy + myAPI;
 
 //console.log(myAPI);
 
 const resultContainer = document.querySelector(".container");
 
 
-async function cryptoNames() {
+async function covidResults() {
     try{
-        const response = await fetch(myAPI);
-        //console.log(response);
+        const response = await fetch(corsFixUrl);
+        console.log(response);
         const responseJSON = await response.json(); // convert the response to json data
-        const cryptoData = responseJSON.data;
-        //console.log(responseJSON);
-        for (let i = 0; i < responseJSON.length; i++) {
+        console.log(responseJSON)
+        const covidData = responseJSON.data;
+        console.log(covidData);
+        for (let i = 0; i < covidData.length; i++) {
            
-            resultContainer.innerHTML += `<li>${responseJSON[i].confirmed.value}</li>`;
+            resultContainer.innerHTML += `<li>${covidData[i].confirmed.value}</li>`;
         }
     }
     catch(error) {
-        resultContainer.innerHTML += `<li>there is an error happening</li>`;
+        resultContainer.innerHTML = `<li>404</li>`;
        
     }
 }
-cryptoNames();
+covidResults();
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
 
 function myFunction() {
     var element = document.body;
