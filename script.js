@@ -1,6 +1,6 @@
-const myAPI = "https://coronavirus.m.pipedream.net/"
+const myAPI = "https://covid19.mathdro.id/api"
 
-console.log(myAPI);
+//console.log(myAPI);
 
 const resultContainer = document.querySelector(".container");
 
@@ -8,13 +8,13 @@ const resultContainer = document.querySelector(".container");
 async function cryptoNames() {
     try{
         const response = await fetch(myAPI);
-        console.log(response);
+        //console.log(response);
         const responseJSON = await response.json(); // convert the response to json data
         const cryptoData = responseJSON.data;
-        console.log(responseJSON);
-        for (let i = 0; i < cryptoData.length; i++) {
+        //console.log(responseJSON);
+        for (let i = 0; i < responseJSON.length; i++) {
            
-            resultContainer.innerHTML += `<li>${cryptoData[i].global.confirmed}</li>`;
+            resultContainer.innerHTML += `<li>${responseJSON[i].confirmed.value}</li>`;
         }
     }
     catch(error) {
@@ -44,7 +44,9 @@ function myFunction() {
  const month = 5;
  const date = 9;
  const dateObj = new Date(year, month, date);
- console.log(dateObj)
+ //console.log(dateObj)
 //ANSWER: thu.09.2022
 
-console.log(window.document.location)
+//console.log(window.document.location)
+
+//console.log(Math.PI)
