@@ -27,8 +27,8 @@ cryptoNames();
 function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
-    element.classList.toggle("darkmode-btn")
  }
+ 
 
  let showingAlert = false;
  const interval = setInterval(() => {
@@ -39,4 +39,12 @@ function myFunction() {
      
  }, 1000);
 
+ //TRYING SOMETHING FROM INSTAGRAM
+ const year =  2022;
+ const month = 5;
+ const date = 9;
+ const dateObj = new Date(year, month, date);
+ console.log(dateObj)
+//ANSWER: thu.09.2022
 
+console.log(window.document.location)
