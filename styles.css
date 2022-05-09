@@ -76,9 +76,11 @@ body {
   .footer{
       position: absolute;
       top: 2500px;
-      color: lightcyan;
-      background-color: aqua;
+      color: gray;
+      background: linear-gradient(
+          to bottom right,
+          #ff48b6, #ff7e6c
+      );
       height: 100px;
-      color: white;
       width: 100%;
   }
