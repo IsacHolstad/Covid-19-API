@@ -12,7 +12,7 @@ body{
     background-image: linear-gradient(rebeccapurple, rgb(115, 19, 212));
     border-radius: 50px;
     margin-left: 50px;
-    color: white;
+    
 }
 */
 .navigation{
@@ -20,7 +20,19 @@ body{
     position: absolute;
     top: 0px;
     height: 40px;
+   
   
+}
+nav#navigation{
+    background: linear-gradient(
+          to bottom right,
+          #ff48b6, #ff7e6c
+      );
+    color: white;
+     
+}
+ul a{
+    color: white;
 }
 li{
     margin-top: 50px;
@@ -46,7 +58,7 @@ a:hover{
     border-radius: 20px;
     height: 20px;
     width: 75px;
-    background-color: white;
+    background-color: transparent;
     border: 1px solid black;
 
     right: 5px;
@@ -76,7 +88,7 @@ body {
   .footer{
       position: absolute;
       top: 2500px;
-      color: gray;
+      color: white;
       background: linear-gradient(
           to bottom right,
           #ff48b6, #ff7e6c
