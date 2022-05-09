@@ -32,9 +32,10 @@ function myFunction() {
  let showingAlert = false;
  const interval = setInterval(() => {
      document.title = showingAlert
-     ? 'Covid-19': '(1) New Message';
+     ? 'Covid-19': 'Covid-18';
 
      showingAlert = !showingAlert;
+     
  }, 1000);
 
 
